@@ -1,0 +1,122 @@
+body {
+  background: #966c3b;
+}
+
+.App {
+  text-align: center;
+}
+
+.instructions {
+  color: #ffe6ca;
+} 
+
+.repo-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.repo-card {
+  width: 20%;
+  height: 16em;
+  border-radius: 8px;
+  position: relative;
+  margin: 0 1em 1em 0;
+  background-color: #ffe6ca;
+  overflow: hidden;
+  color: #453018;
+}
+
+.repo-card .card-body {
+  z-index: 5;
+
+}
+
+.repo-card .name {
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.repo-card .url {
+  word-break: break-all;
+  font-size: .9em;
+  margin: 0 2em;
+}
+
+.repo-card .url a:link {
+  color: #b3ac1b
+}
+
+.repo-card .url a:visited {
+  color: #cdc733;
+}
+
+.repo-card .stars {
+  margin: 1em;
+}
+
+.repo-card .stars img {
+  margin-left: .5em;
+  vertical-align: middle;
+}
+
+.repo-card .number {
+  position: absolute;
+  font-size: 10em;
+  color: #d0af84;
+  bottom: -26px;
+  left: 0;
+  z-index: 0;
+  opacity: .5;
+}
+
+.repo-card .card-details {
+  font-size: .7em;
+  padding: 10px;
+  background: #453018;
+  color: #ffe6ca;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+/* Card details animation to slide up */
+.repo-card:hover .card-details {
+  top: 4em;
+}
+
+.repo-card .updated {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.repo-card .commits {
+  text-align: left;
+}
+
+.repo-card .commit  {
+  margin-bottom: 1em;
+}
+
+.repo-card .commit .message {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 20px;
+}
+
+.repo-card .commit .message .sha {
+  color: #fff;
+}
+
+.repo-card .commit .author {
+  color: #b3ac1b;
+}
+
